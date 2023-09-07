@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ReadStep.iml" filepath="$PROJECT_DIR$/ReadStep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CsvComparison.iml" filepath="$PROJECT_DIR$/CsvComparison.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,13 @@
+//SNAPSHOT ECHO - PRISM
+=CONCATENA(E2;"_";F2;"_";G2;"_";H2;"_";I2;"_";N2;"_";O2;"_";P2)
+
+
+//MOVEMENT ECHO - PRISM
+=CONCATENA(D2;"_";E2;"_";F2;"_";G2;"_";H2;"_";M2;"_";N2;"_";J2)
+
+=CONCATENA(E2;"_";F2;"_";G2;"_";H2;"_";I2;"_";N2;"_";O2;"_";K2)
+
+
+http://localhost:8080/prism-igp-igp-service/api/igp/finance/planSnapshotExecution/21
+
+http://localhost:8080/prism-igp-igp-service/api/igp/finance/planMovementExecution/21

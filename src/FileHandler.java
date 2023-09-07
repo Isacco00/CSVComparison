@@ -25,14 +25,14 @@ public class FileHandler {
                 final Optional<String> extensionOp = this.getExtension(f.getName());
                 if (extensionOp.isPresent()) {
                     final String extension = extensionOp.get();
-                    return extension.equalsIgnoreCase("stp");
+                    return extension.equalsIgnoreCase("csv");
                 }
                 return false;
             }
 
             @Override
             public String getDescription() {
-                return ".stp";
+                return ".csv";
             }
 
             public Optional<String> getExtension(final String filename) {
@@ -40,7 +40,7 @@ public class FileHandler {
             }
         };
         fileChooser.setFileFilter(filter);
-        fileChooser.setDialogTitle("Select STEP File");
+        fileChooser.setDialogTitle("Select CSV File");
         fileChooser.showOpenDialog(null);
         return fileChooser;
     }
@@ -53,6 +53,10 @@ public class FileHandler {
 
     public PrintWriter getFileWriter(String fileName) throws IOException {
         return new PrintWriter(new BufferedWriter(new FileWriter(fileName)));
+    }
+
+    public PrintWriter getFileWriterAppend(String fileName) throws IOException {
+        return new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)));
     }
 
 
