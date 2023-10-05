@@ -25,14 +25,14 @@ public class FileHandler {
                 final Optional<String> extensionOp = this.getExtension(f.getName());
                 if (extensionOp.isPresent()) {
                     final String extension = extensionOp.get();
-                    return extension.equalsIgnoreCase("csv");
+                    return extension.equalsIgnoreCase("txt");
                 }
                 return false;
             }
 
             @Override
             public String getDescription() {
-                return ".csv";
+                return ".txt";
             }
 
             public Optional<String> getExtension(final String filename) {
@@ -40,7 +40,7 @@ public class FileHandler {
             }
         };
         fileChooser.setFileFilter(filter);
-        fileChooser.setDialogTitle("Select CSV File");
+        fileChooser.setDialogTitle("Select Config File");
         fileChooser.showOpenDialog(null);
         return fileChooser;
     }
