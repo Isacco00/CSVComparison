@@ -1,0 +1,2 @@
+*.env filter=git-crypt-wepladoo_git_crypt_key diff=git-crypt-wepladoo_git_crypt_key
+.gitattributes !filter !diff
